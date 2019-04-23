@@ -10,7 +10,7 @@ floating_modifier $super
 
 # autorun
 exec --no-startup-id ~/.screenlayout/main.sh
-exec --no-startup-id feh --bg-scale ./wallpaper.jpg
+exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper.jpg
 exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id compton -b
 exec --no-startup-id dunst # Notification Daemon
@@ -110,3 +110,5 @@ mode "resize" {
         bindsym Return mode "default"
 }
 bindsym $super+r mode "resize"
+
+for_window [class="^.*"] border pixel 0
