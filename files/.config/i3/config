@@ -9,7 +9,8 @@ font pango: Hack Nerd Font 8
 floating_modifier $super
 
 # autorun
-exec --no-startup-id feh --bg-scale ~/.config/wallpaper.jpg
+exec --no-startup-id ~/.screenlayout/main.sh
+exec --no-startup-id feh --bg-scale ./wallpaper.jpg
 exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id compton -b
 exec --no-startup-id dunst # Notification Daemon
@@ -109,23 +110,3 @@ mode "resize" {
         bindsym Return mode "default"
 }
 bindsym $super+r mode "resize"
-
-# window rules, you can find the window class using xprop
-for_window [class="^.*"] border pixel 1
-assign [class=URxvt] 1
-assign [class=Firefox] 0
-#assign [class=Thunar|File-roller] 3
-#assign [class=Geany|Evince|Gucharmap|Soffice|libreoffice*] 4
-#assign [class=Audacity|Vlc|mpv|Ghb|Xfburn|Gimp*|Inkscape] 5
-##assign [class=Lxappearance|System-config-printer.py|Lxtask|GParted|Pavucontrol|Exo-helper*|Lxrandr|Arandr] 6
-#for_window [class=Viewnior|feh|Audacious|File-roller|Lxappearance|Lxtask|Pavucontrol] floating enable
-#for_window [class=URxvt|Firefox|Geany|Evince|Soffice|libreoffice*|mpv|Ghb|Xfburn|Gimp*|Inkscape|Vlc|Lxappearance|Audacity] focus
-#for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo-helper*|Lxrandr|Arandr] focus
-
-# colour of border, background, text, indicator, and child_border
-client.focused			#bf616a #2f343f #d8dee8 #bf616a #d8dee8
-client.focused_inactive	#2f343f #2f343f #d8dee8 #2f343f #2f343f
-client.unfocused		#2f343f #2f343f #d8dee8 #2f343f #2f343f
-client.urgent			#2f343f #2f343f #d8dee8 #2f343f #2f343f
-client.placeholder		#2f343f #2f343f #d8dee8 #2f343f #2f343f
-client.background		#2f343f
