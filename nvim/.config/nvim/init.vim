@@ -25,6 +25,7 @@ filetype plugin indent on
 syntax enable
 set encoding=utf-8
 set spell spelllang=en_us
+set nospell
 set incsearch ignorecase smartcase hlsearch
 set list listchars=trail:»,tab:»- " Show trailing spaces and tabs
 set wrap breakindent
