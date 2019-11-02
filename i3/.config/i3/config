@@ -18,7 +18,7 @@ exec --no-startup-id clipster -d
 exec_always --no-startup-id betterlockscreen -u ~/.config/i3/wallpaper.png
 
 # start a terminal
-bindsym $super+Return exec i3-sensible-terminal
+bindsym $super+Return exec kitty
 
 # start dmenu
 bindsym $super+d exec rofi -show drun -location 0
