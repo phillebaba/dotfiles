@@ -32,6 +32,12 @@ export PATH=$PATH:$GOPATH:$GOBIN
 # Python
 export PATH="$PATH:/home/philip/.local/bin"
 
+# Krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# Kubebuilder
+export PATH=$PATH:/usr/local/kubebuilder/bin
+
 # Aliases
 alias vim="nvim"
 eval $(thefuck --alias)
