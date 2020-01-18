@@ -20,6 +20,8 @@ Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; ./generate.py' }
 
 call plug#end()
 
+colorscheme wal
+
 """ Other Configurations
 filetype plugin indent on
 syntax enable
