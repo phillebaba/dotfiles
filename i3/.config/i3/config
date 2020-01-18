@@ -24,7 +24,7 @@ bindsym $super+Return exec kitty
 bindsym $super+d exec rofi -show drun -location 0
 
 # power menu
-bindsym $super+p exec ~/.config/i3/power-menu.sh
+bindsym $super+p exec ~/.config/rofi/scripts/powermenu.sh
 
 # change screen brightness
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
