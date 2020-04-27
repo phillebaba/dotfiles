@@ -1,7 +1,4 @@
 #! /usr/bin/env bash
-
-sleep 1;
-
 killall -q polybar
 
 for m in $(polybar --list-monitors | cut -d":" -f1); do
