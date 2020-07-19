@@ -6,6 +6,8 @@ ZSH_THEME="robbyrussell"
 DISABLE_AUTO_TITLE="true"
 HIST_STAMPS="yyyy-mm-dd"
 
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc"
+
 plugins=(git virtualenv virtualenvwrapper terraform docker aws kubectl pass)
 
 source $ZSH/oh-my-zsh.sh

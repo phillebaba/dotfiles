@@ -1,6 +1,0 @@
-configuration {
-  theme: "~/.cache/wal/colors-rofi-dark.rasi";
-  lines: 12;
-  display-window: "Window";
-  display-drun: "Search";
-}

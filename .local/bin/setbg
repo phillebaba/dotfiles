@@ -1,0 +1,13 @@
+#/bin/sh
+
+# This script does the following:
+#	Run by itself, set the wallpaper (at X start).
+# Generate theme with wal
+
+# Location of wallpaper
+bgloc="${HOME}/.config/wallpaper.png"
+
+wal -R
+if [ $? -ne 0 ]; then
+  wal -i $bgloc
+fi

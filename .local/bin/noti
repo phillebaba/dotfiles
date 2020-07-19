@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# noti - Control state of notifications
+
+disable()
+{
+  notify-send "DUNST_COMMAND_PAUSE"
+  echo "Notifications disabled"
+}
+
+enable()
+{
+  notify-send "DUNST_COMMAND_RESUME"
+  echo "Notifications enabled"
+}
+
+while [[ "$#" -gt 0 ]]; do
+  case $1 in
+    enable) enable ;;
+    disable) disable ;;
+    *) echo "Unknown parameter passed: $1"; exit 1 ;;
+  esac
+  shift
+done
+
