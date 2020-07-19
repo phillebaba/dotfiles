@@ -2,3 +2,4 @@ setbg &		# set the background with the `setbg` script
 xcompmgr &		# xcompmgr for transparency
 dunst &			# dunst for notifications
 xset r rate 180 35 &	# Speed xrate up
+xlayoutdisplay & # Set screen layout
