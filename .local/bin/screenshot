@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Make screen shot selection and copy file into clipboard
+
+TMP_DIR=$(mktemp -d)
+FILE_PATH="$TMP_DIR/screenshot.png"
+import $FILE_PATH
+xclip -selection clipboard -t image/png -i $FILE_PATH
+echo $FILE_PATH
